@@ -13,6 +13,13 @@ function liveScreen(value) {
   }
   res.value += value;
 }
+function doubleValue() {
+  let res = document.getElementById("result");
+  if(res.value == "undefined"){
+    res.value = "1";
+  }
+  res.value = res.value * 2;
+}
 // Swaps the style sheet in order to  achieve dark mode.
 function changeTheme() {
   let darkMode = document.getElementById("dark-mode");
